@@ -1,5 +1,5 @@
-# addressbook
+Addressbook
 OOP address book using PHP/MySQL and PDO
 
-Installation
+#Installation
 Create MySQL database and execute users.sql
