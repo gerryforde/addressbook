@@ -1,0 +1,53 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.9
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 08, 2014 at 09:20 AM
+-- Server version: 5.5.36-MariaDB
+-- PHP Version: 5.4.22
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `user_profile`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `age` int(3) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `hobbies` varchar(100) NOT NULL,
+  `work` varchar(50) NOT NULL,
+  `mobile` int(15) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `age`, `address`, `hobbies`, `work`, `mobile`) VALUES
+(11, 'MARK REYES', 45, 'BINONDO, MANILA PHILIPPINES', 'COOKING AND RUNNING', 'BUSINESS PERSON', 45454545),
+(12, 'BILL NORTON', 67, 'BACOLOD CITY, NEGROS OCCIDENTAL', 'BODY BUILDING AND BIKING', 'PROGRAMMER ', 243234234),
+(13, 'ANA TAN', 21, 'BARANGAY BATA, BACOLOD CITY, NEGROS OCCIDENTAL', 'MODELING, SINGING AND COOKING', 'SECONDARY SCHOOL TEACHER', 454545456),
+(14, 'STEPHEN CHAN', 34, 'HONG KONG CHINA', 'DRAWING', 'MESSENGER', 45121212),
+(15, 'MIKE BROWN', 17, 'USA AMERICA', 'BASKETBALL AND BASEBALL', 'DATA ENCODER AND SYSTEM ANALYST', 121245);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
